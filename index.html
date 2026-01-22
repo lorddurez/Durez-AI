@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ɖʊʀɛʐ☆ S70R3</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #0f172a;
+        color: #e5e7eb;
+    }
+
+    /* HEADER & LOGO */
+    header {
+        background: linear-gradient(135deg, #020617, #020617);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #38bdf8;
+        box-shadow: 0 0 15px #38bdf8;
+    }
+
+    .logo-text {
+        font-size: 26px;
+        font-weight: bold;
+        color: #38bdf8;
+        text-shadow:
+            0 0 5px #38bdf8,
+            0 0 10px #38bdf8,
+            0 0 20px rgba(56,189,248,0.8);
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 5px #38bdf8; }
+        to { text-shadow: 0 0 20px #38bdf8; }
+    }
+
+    nav a {
+        margin-left: 20px;
+        color: #e5e7eb;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+        margin-bottom: 15px;
+        color: #38bdf8;
+    }
+
+    .hero p {
+        max-width: 700px;
+        margin: auto;
+        color: #9ca3af;
+        font-size: 18px;
+    }
+
+    /* CONTENT */
+    .container {
+        padding: 60px 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section-title h3 {
+        font-size: 32px;
+        color: #38bdf8;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: #020617;
+        border-radius: 12px;
+        padding: 25px;
+        border: 1px solid #1e293b;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(56,189,248,0.2);
+    }
+
+    .card h4 {
+        color: #38bdf8;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #9ca3af;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #38bdf8;
+        color: #020617;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #0ea5e9;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #020617;
+        text-align: center;
+        padding: 25px;
+        color: #6b7280;
+        border-top: 1px solid #1e293b;
+    }
+
+    footer span {
+        color: #38bdf8;
+    }
+
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25D366;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        text-decoration: none;
+        box-shadow: 0 0 20px rgba(37,211,102,0.8);
+        z-index: 1000;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 10px #25D366; }
+        100% { box-shadow: 0 0 25px #25D366; }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <!-- Replace gojo.png with your Gojo image file -->
+        <img src="gojo.png" alt="Gojo Logo">
+        <div class="logo-text">ɖʊʀɛʐ☆ S70R3</div>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Buy & Sell Digital Gaming Services</h2>
+    <p>
+        Secure marketplace for gaming items, digital tools, and online services.
+        Fast delivery • Trusted sellers • 24/7 Support
+    </p>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <h3>Our Services</h3>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <h4>🎮 Gaming Accounts & Top-Ups</h4>
+            <p>Buy and sell gaming accounts, skins, and in-game currency top-ups.</p>
+            <a href="https://wa.me/2348062641931" target="_blank" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h4>🌍 Proxy & Network Services</h4>
+            <p>High-speed private proxies for general online and development use.</p>
+            <a href="https://wa.me/2348062641931" target="_blank" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h4>📈 Social Media Engagement</h4>
+            <p>Boost visibility with likes, followers, and promotional tools.</p>
+            <a href="https://wa.me/2348062641931" target="_blank" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h4>📱 Virtual Numbers</h4>
+            <p>Foreign and virtual numbers for testing and business verification.</p>
+            <a href="https://wa.me/2348062641931" target="_blank" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h4>🤖 WhatsApp Automation</h4>
+            <p>Business-oriented WhatsApp bots for customer support and replies.</p>
+            <a href="https://wa.me/2348062641931" target="_blank" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h4>🛠️ Digital Tools & Apps</h4>
+            <p>Premium-style applications and tools for productivity & learning.</p>
+            <a href="https://wa.me/2348062641931" target="_blank" class="btn">Explore</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 <span>ɖʊʀɛʐ☆ S70R3</span> — All rights reserved.
+</footer>
+
+<a href="https://wa.me/2348062641931" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬
+</a>
+
+</body>
+  </html>
